@@ -1,0 +1,37 @@
+.Socialicons {
+    display: flex;
+    width: fit-content;
+    margin-top: auto;
+    height: 1.5rem;
+    .icons{
+    cursor: pointer;
+    margin-right: .8rem;
+    }
+    .github:hover{
+        color: gray !important;
+    }
+    .f-book:hover{
+        color: blue !important;
+    }
+    .ig:hover{
+        color: palevioletred !important;
+    }
+    .twitter:hover{
+        color: skyblue !important;
+    }
+    @media(max-width:990px){
+        margin-top: 0;
+        height: 1rem;
+        margin-bottom: .7rem;
+        .icons{
+        color: gray !important;
+        }
+    }
+    @media (max-width: 702px) {
+        .Socialicons{
+          display: none;
+        }
+    }
+  
+        
+}

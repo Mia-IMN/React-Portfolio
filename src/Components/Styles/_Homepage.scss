@@ -1,0 +1,67 @@
+
+.Homepage{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .home-text{
+        z-index: 1 !important;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 34px;
+        text-align: center;
+        align-self: center;
+        .motion-text{
+            position: relative;
+            font-weight: bold;
+            width: 100%;
+            color: red;
+            h1{
+                font-size: 50px;
+                margin-top: 1rem;
+            }
+            span{
+                color: white;
+                font-size: 50px;
+
+            }
+            p{
+                color: #aaa;
+                font-size: 24px;
+                font-weight: 100;
+                font-family: 'Lato', sans-serif;
+                margin-top: 1rem;
+            }
+            .txt{
+                border-right: .25rem solid #aaa;
+                animation: blink 400ms infinite;
+            }
+            @keyframes typewriter {
+                to{
+                    left: 100%;
+                    color: white;
+                }
+            }
+
+            @keyframes blink {
+                to{
+                    border-right-color: transparent;
+                }
+            }
+            @media(max-width: 500px){
+                h1, span{
+                    font-size: 40px;
+                }
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
+        @media(max-width: 500px){
+            font-size: 30px;
+        }
+    }
+}

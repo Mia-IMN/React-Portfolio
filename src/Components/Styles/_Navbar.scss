@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+
+.navbar{
+    background-color: $dark;
+    display: flex;
+    flex-direction: column;
+    position: fixed !important;
+    z-index: 1;
+    width: 16rem;
+    height: 100vh;
+    color: white;
+    p{
+        font-size: 18px;
+    }
+    .user-pic{
+        padding-top: 2rem;
+        width: 60%;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        padding-bottom: 2rem;
+        font-size: 18px;
+    }
+    a:hover{
+        color: skyblue !important;
+    }
+    .Username{
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .Home{
+        margin-top: auto;
+    }
+    .item-list{
+        background-color: black;
+        border-bottom: .00001px solid rgb(94, 91, 91);
+        padding-left: 2rem;
+    }
+    .last{
+        border-bottom: none;
+    }
+    @media(max-width: 990px){
+        flex-direction: row;
+        height: 4rem;
+        width: 100%;
+        display: none;
+        .user-pic{
+            display: none;
+        }
+        p{
+            display: none;
+        }
+        a{
+            display: none;
+        }
+        .sidedrawer{
+            background-color: #fff;
+            position: relative;
+        }
+    }
+}
